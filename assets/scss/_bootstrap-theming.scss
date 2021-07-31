@@ -71,24 +71,27 @@
     margin-bottom: 0;
   }
   margin-bottom: $gap * 2;
-}
-.panel-info {
-  border: none;
-}
-.panel-info > .panel-heading {
-  color: $color-white;
-  background-color: $color-accent;
-  border: none;
-  font-size: 1.125rem;
-  letter-spacing: 0.08em;
-}
-.panel-body {
-  border: 1px solid $color-gray;
-  border-radius: 0 0 4px 4px;
-}
-.input {
-  &-lg,
-  &-group-lg > .form-control {
-    font-size: 0.875rem;
+
+  &-info {
+    border: none;
+    .panel-heading {
+      color: $color-white;
+      background-color: $color-accent;
+      border: none;
+      font-size: 1.125rem;
+      letter-spacing: 0.08em;
+    }
+
+    &-body {
+      border: 1px solid $color-gray;
+      border-radius: 0 0 4px 4px;
+    }
+  }
+
+  .input {
+    &-lg,
+    &-group-lg > .form-control {
+      font-size: 0.875rem;
+    }
   }
 }
