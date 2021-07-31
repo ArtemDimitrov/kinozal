@@ -113,6 +113,26 @@ a:hover, a:focus {
 .vertical-slider__image {
   width: 100%;
 }
+
+.user-login {
+  position: relative;
+}
+.user-login-tabs {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  border: none;
+  margin-right: -5px;
+}
+.user-login-tabs a {
+  padding: 0 !important;
+  color: #d5d5d5;
+  border: none !important;
+  background-color: transparent !important;
+}
+.user-login-tabs .active a {
+  color: #ffffff !important;
+}
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;

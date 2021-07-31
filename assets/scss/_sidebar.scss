@@ -8,3 +8,24 @@
     width: 100%;
   }
 }
+.user-login {
+  position: relative;
+  &-tabs {
+    position: absolute;
+    top: 0;
+    right: $gap;
+    border: none;
+    margin-right: -5px;
+
+    a {
+      padding: 0 !important;
+      color: $color-gray;
+      border: none !important;
+      background-color: transparent !important;
+    }
+
+    .active a {
+      color: $color-white !important;
+    }
+  }
+}
