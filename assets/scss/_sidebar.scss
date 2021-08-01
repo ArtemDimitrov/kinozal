@@ -10,15 +10,17 @@
 }
 .user-login {
   position: relative;
-  &-tabs {
+
+  &__tabs {
     position: absolute;
     top: 0;
     right: $gap;
+
     border: none;
     margin-right: -5px;
 
     a {
-      padding: 0 !important;
+      padding: 14px 5px 12px !important;
       color: $color-gray;
       border: none !important;
       background-color: transparent !important;

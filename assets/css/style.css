@@ -117,20 +117,20 @@ a:hover, a:focus {
 .user-login {
   position: relative;
 }
-.user-login-tabs {
+.user-login__tabs {
   position: absolute;
   top: 0;
   right: 15px;
   border: none;
   margin-right: -5px;
 }
-.user-login-tabs a {
-  padding: 0 !important;
+.user-login__tabs a {
+  padding: 14px 5px 12px !important;
   color: #d5d5d5;
   border: none !important;
   background-color: transparent !important;
 }
-.user-login-tabs .active a {
+.user-login__tabs .active a {
   color: #ffffff !important;
 }
 @media (min-width: 576px) {
