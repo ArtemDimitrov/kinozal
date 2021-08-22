@@ -43,6 +43,7 @@ $image-size-with-padding: $image-size + $gap-md;
   &:not(:last-child) {
     min-height: $image-size-with-padding;
     margin-bottom: $gap;
+
     &::after {
       position: absolute;
       right: 0;
@@ -58,31 +59,35 @@ $image-size-with-padding: $image-size + $gap-md;
     a {
       color: $color-accent;
     }
+
     .thumbnail {
-      color: $color-accent;
+      border-color: $color-accent;
       background-color: $color-accent;
     }
   }
 
-  &_title {
+  &__title {
     margin-bottom: 0.5em;
   }
-  &_thumbnail {
+
+  &__thumbnail {
     float: left;
     margin: 0 $gap-md 0 0;
     width: $image-size;
   }
-  &_date {
+
+  &__image {
+    width: 100%;
+  }
+
+  &__link {
+    @include block-shortener(1rem, 1.5, 50px, 2);
+  }
+
+  &__date {
     text-align: right;
     color: $color-gray-dark;
     font-size: 0.8rem;
-  }
-  &_link {
-    transition: color 0.25s;
-    @include block-shortener(1rem, 1.5, 50px, $l: 2);
-  }
-  &_image {
-    width: 100%;
   }
 }
 .top-films {
